@@ -1,4 +1,3 @@
-// show cart
 
 (function(){
     //target cart button
@@ -12,7 +11,6 @@
 
 })();
 
-// add items to the cart
 
 (function(){
 
@@ -51,7 +49,6 @@ cartBtn.forEach(function(btn){
               <div class="item-text"><p id="cart-item-title" class="font-weight-bold mb-0">${item.name}</p><span>$</span>
                 <span id="cart-item-price" class="cart-item-price" class="mb-0">${item.price}</span></div><a href="#" id='cart-item-remove' class="cart-item-remove"><i class="fas fa-trash"></i></a></div>`;
 
-        //select cart
 
         const cart = document.getElementById('cart');
         const total = document.querySelector('.cart-total-container');
@@ -65,7 +62,6 @@ cartBtn.forEach(function(btn){
     });
 });
 
-// show totals
 function showTotals(){
 
     const total = [];
@@ -88,7 +84,3 @@ function showTotals(){
 
 })();
 
-//Things learned
-//DOM traversal using previousElementSibling
-//element.insertBefore
-//reduct method
